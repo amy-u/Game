@@ -1,37 +1,36 @@
-body{
-    margin: 0;
-    padding:0;
-    background: grey;
+body {
+  margin: 0;
+  padding: 0;
+  background: grey;
 }
 
 button {
-    margin: 15px;
+  margin: 15px;
 }
 
-.rotate{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    background: white;
-    border-radius: 50px;
-    animation: animate 2s linear infinite;
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50px;
+  animation: animate 2s linear infinite;
 }
 
-
-@keyframes animate{
-    0%
-    {
-        transform: translate(-50%, -50%) perspective(360px) rotateX(0deg) rotateY(360deg);
-    }
-    50%
-    {
-        transform: translate(-50%, -50%) perspective(200px) rotateX(0deg) rotateY(0deg);
-    }
-    100%
-    {
-        transform: translate(-50%, -50%) perspective(200px) rotateX(0deg) rotateY(360deg);
-    }
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) perspective(360px) rotateX(0deg)
+      rotateY(360deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) perspective(200px) rotateX(0deg)
+      rotateY(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) perspective(200px) rotateX(0deg)
+      rotateY(360deg);
+  }
 }
