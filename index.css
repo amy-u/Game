@@ -1,7 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  background: grey;
+  
+  background-image: url(http://sf.co.ua/14/06/wallpaper-254915.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+  color:rgb(198,153,3);
+
+}
+
+header {
+  text-align: center;
+  letter-spacing: 0.050em;
+  padding:20px;
+  font-family: 'Mansalva', cursive;
+  font-size: xx-large;
+  color: rgb(236,232,195);
+}
+.instructions{
+  font-size: xx-large;
+  font-family: 'Hammersmith One', sans-serif;
+  letter-spacing: 0.030em;
 }
 
 button {
@@ -15,7 +37,7 @@ button {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: white;
+  background: rgb(198,153,3);
   border-radius: 50px;
   animation: animate 2s linear infinite;
 }
@@ -25,12 +47,14 @@ button {
     transform: translate(-50%, -50%) perspective(360px) rotateX(0deg)
       rotateY(360deg);
   }
-  50% {
-    transform: translate(-50%, -50%) perspective(200px) rotateX(0deg)
+
+  100% {
+    transform: translate(-50%, -50%) perspective(360px) rotateX(0deg)
       rotateY(0deg);
   }
+  
   100% {
-    transform: translate(-50%, -50%) perspective(200px) rotateX(0deg)
-      rotateY(360deg);
+    transform: translate(-50%, -50%) perspective(360px) rotateX(0deg)
+      rotateY(0deg);
   }
 }
