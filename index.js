@@ -16,3 +16,14 @@ function myFunction(){
 
     document.getElementById("coin").innerHTML = text;
 }
+
+//Try to get the animation to stop/pause
+//
+// $(document).ready(function(){
+//     $(".play-animation").click(function(){
+//         $(".animated").css("animation-play-state", "running");
+//     });
+//     $(".stop-animation").click(function(){
+//         $(".animated").css("animation-play-state", "paused");
+//     });
+// });
